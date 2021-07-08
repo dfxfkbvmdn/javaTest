@@ -18,9 +18,11 @@ public class ArrayTest04 {
 			System.out.print(numArr[i]);
 		}
 		
-		for(int i=1;i<100;i++) {// 100회
-			n = (int)(Math.random()*10);
+		//
+		for(int i=1;i<100;i++) {// 100회 반복
+			n = (int)(Math.random()*10);  // 임의의 인덱스값 받아서 대입
 			
+			// numArr[0]과 numArr[n]을 서로 교환
 			temp = numArr[0];
 			numArr[0] = numArr[n];
 			numArr[n] = temp;
